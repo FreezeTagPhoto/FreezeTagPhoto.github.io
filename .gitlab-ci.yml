@@ -12,6 +12,7 @@ build-site:
   artifacts:
     paths:
       - TESTING_FILE.txt
+      - node_modules/*
       - dist/*
 
 deploy-site:
