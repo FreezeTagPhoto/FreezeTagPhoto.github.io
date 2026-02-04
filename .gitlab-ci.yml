@@ -13,8 +13,21 @@ build-site:
       - node_modules/*
       - dist/*
 
+build-book:
+  stage: build
+  image: rust:latest
+  script:
+    - cargo install mdbook
+    - cd documentation-book
+    - mdbook build
+  artifacts:
+    paths:
+      - documentation-book/book/*
+
 deploy-site:
   stage: deploy
   image: jfxs/wrangler:latest
   script:
+    - mkdir dist/documentation
+    - mv documentation-book/book/* dist/documentation/
     - npx wrangler pages deploy dist --project-name=$PROJECT_NAME --branch=main
