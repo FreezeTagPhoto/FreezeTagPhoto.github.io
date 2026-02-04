@@ -8,15 +8,13 @@ build-site:
   script:
     - npm install --global pnpm@latest-10
     - pnpm install
-    - touch TESTING_FILE.txt
   artifacts:
     paths:
-      - TESTING_FILE.txt
       - node_modules/*
       - dist/*
 
 deploy-site:
   stage: deploy
-  image: node:latest
+  image: jfxs/wrangler:latest
   script:
-    - pnpm wrangler pages deploy dist --project-name=$PROJECT_NAME
+    - npx wrangler pages deploy dist --project-name=$PROJECT_NAME
