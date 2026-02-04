@@ -12,9 +12,10 @@ build-site:
   artifacts:
     paths:
       - TESTING_FILE.txt
-      - node_modules/*
+      - dist/*
 
 deploy-site:
   stage: deploy
+  image: node:latest
   script:
-    - ls
+    - pnpm wrangler pages deploy dist --project-name=$PROJECT_NAME
