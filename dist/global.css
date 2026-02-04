@@ -1,0 +1,40 @@
+@import "reset.css";
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background: #181825;
+    --text: #e0e0ee;
+    --foreground1: #1e1e2e;
+    --foreground2: #313244;
+    --accent1: #579dd7;
+    --accent2: #aedbf0;
+    --accent3: #ffffff;
+    --red: #f38ba8;
+    --green: #a6e3a1;
+    --yellow: #f9e2af;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    --background: #e6e9ef;
+    --text: #0c0c0d;
+    --foreground1: #eff1f5;
+    --foreground2: #ccd0da;
+    --accent1: #579dd7;
+    --accent2: #aedbf0;
+    --accent3: #ffffff;
+    --red: #d20f39;
+    --green: #40a02b;
+    --yellow: #df8e1d;
+  }
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
