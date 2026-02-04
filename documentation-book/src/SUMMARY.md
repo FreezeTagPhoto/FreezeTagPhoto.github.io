@@ -1,3 +1,3 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+- [Quickstart Guide for Users](./quickstart_users.md)
