@@ -17,9 +17,9 @@ build-book:
   stage: build
   image: 
     name: peaceiris/mdbook:latest
-    entrypoint: ["/bin/sh"]
+    entrypoint: [""]
   script:
-    - mdbook build documentation-book --dest-dir dist/documentation
+    - /bin/sh -c "mdbook build documentation-book --dest-dir dist/documentation"
   artifacts:
     paths:
       - documentation-book/book/*
