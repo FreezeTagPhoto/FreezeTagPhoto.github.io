@@ -10,7 +10,6 @@ build-site:
     - pnpm install
   artifacts:
     paths:
-      - node_modules/*
       - dist/*
 
 build-book:
@@ -22,7 +21,7 @@ build-book:
     - /bin/sh -c "mdbook build documentation-book --dest-dir dist/documentation"
   artifacts:
     paths:
-      - documentation-book/book/*
+      - dist/*
 
 deploy-site:
   stage: deploy
