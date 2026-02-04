@@ -15,9 +15,8 @@ build-site:
 
 build-book:
   stage: build
-  image: rust:latest
+  image: peaceiris/mdbook:latest
   script:
-    - cargo install mdbook
     - cd documentation-book
     - mdbook build
   artifacts:
