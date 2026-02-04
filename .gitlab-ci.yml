@@ -2,19 +2,9 @@ stages:
   - build
   - deploy
 
-build-site:
-  stage: build
-  image: node:latest
-  script:
-    - npm install --global pnpm@latest-10
-    - pnpm install
-  artifacts:
-    paths:
-      - dist/*
-
 build-book:
   stage: build
-  image: 
+  image:
     name: peaceiris/mdbook:latest
     entrypoint: [""]
   script:
