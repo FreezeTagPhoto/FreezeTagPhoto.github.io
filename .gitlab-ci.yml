@@ -6,6 +6,7 @@ build-site:
   stage: build
   image: node:latest
   script:
+    - npm install pnpm
     - pnpm install
     - touch TESTING_FILE.txt
 
