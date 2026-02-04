@@ -17,4 +17,4 @@ deploy-site:
   stage: deploy
   image: jfxs/wrangler:latest
   script:
-    - npx wrangler pages deploy dist --project-name=$PROJECT_NAME --branch=main
+    - npx wrangler pages deploy dist --project-name=$PROJECT_NAME --branch=main --commit-dirty=true
