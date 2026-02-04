@@ -1,0 +1,15 @@
+stages:
+  - build
+  - deploy
+
+build-site:
+  stage: build
+  image: node:latest
+  script:
+    - pnpm install
+    - touch TESTING_FILE.txt
+
+deploy-site:
+  stage: deploy
+  script:
+    - ls
