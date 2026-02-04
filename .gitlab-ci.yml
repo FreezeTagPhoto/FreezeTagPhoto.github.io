@@ -9,6 +9,10 @@ build-site:
     - npm install --global pnpm@latest-10
     - pnpm install
     - touch TESTING_FILE.txt
+  artifacts:
+    paths:
+      - TESTING_FILE.txt
+      - node_modules/*
 
 deploy-site:
   stage: deploy
