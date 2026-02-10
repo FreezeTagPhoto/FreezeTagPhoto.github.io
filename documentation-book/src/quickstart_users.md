@@ -2,7 +2,7 @@
 
 ## Installation/Building/Running
 
-In the beta phase of our project, if you have been asked to participate in our user studies, then you should have received an archive of our project. Unzip the archive. You will also need to have [Docker Compose](https://docs.docker.com/compose/install) installed on your machine. You can use the linked guide which uses Docker Desktop on most platforms, but it is also possible to use Colima or some alternatives. As long as you have access to the `docker compose` commands, you should be good to go!. In the main directory of the FreezeTag project, run
+In the beta phase of our project, if you have been asked to participate in our user studies, then you should have received an archive of our project. Unzip the archive. You will also need to have [Docker Compose](https://docs.docker.com/compose/install) installed on your machine. You can use the linked guide which uses Docker Desktop on most platforms, but it is also possible to use Colima or some alternatives. As long as you have access to the `docker compose` commands, you should be good to go! In the main directory of the FreezeTag project, run
 
 ```
 docker compose up
