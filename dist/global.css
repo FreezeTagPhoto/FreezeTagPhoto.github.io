@@ -38,3 +38,153 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --bg-color: #0f172a;       /* Deep slate background */
+  --card-bg: #1e293b;        /* Lighter slate for depth */
+  --text-primary: #f1f5f9;   /* Off-white for readability */
+  --text-secondary: #94a3b8; /* Muted slate for less important text */
+  --accent: #38bdf8;         /* Bright cyan-blue for links/buttons */
+  --max-width: 700px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #09090b; /* Very dark neutral for the "letterboxing" */
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  max-width: 1000px; 
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  /* Align to the top instead of the center */
+  align-items: flex-start; 
+  
+  /* Add significant padding at the top so it doesn't hit the ceiling */
+  padding: 6rem 1.5rem 2rem 1.5rem; 
+  
+  background-color: var(--bg);
+  background: radial-gradient(circle at top right, var(--accent), transparent 50%), var(--bg);
+  background-attachment: fixed;
+  border-left: 1px solid var(--glass-border);
+  border-right: 1px solid var(--glass-border);
+}
+main {
+  /* The inner content card */
+  max-width: 650px;
+  width: 100%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 4rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Creating a central container vibe */
+main, .container {
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+/* Logo styling */
+a:has(img) {
+  display: block;
+  margin-bottom: 3rem;
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.2));
+  transition: transform 0.3s ease;
+}
+
+a:hover:has(img) {
+  transform: translateY(-2px);
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* Highlighting the first paragraph as a "Lead" */
+p:first-of-type {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* The Call to Action (Documentation link) */
+a[href="documentation"] {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--bg-color); /* Dark text on bright button */
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px 0 rgba(56, 189, 248, 0.39);
+}
+
+a[href="documentation"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+  background-color: #7dd3fc;
+}
+
+/* University mention styling */
+p:last-of-type {
+  font-size: 0.9rem;
+  border-top: 1px solid var(--card-bg);
+  padding-top: 2rem;
+  font-style: italic;
+}
+
+/* Container for the button to give it space */
+.cta-container {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* The actual button */
+.btn-primary {
+  background: var(--accent);
+  color: #000; /* High contrast dark text */
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: -0.2px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 25px rgba(56, 189, 248, 0.4);
+  filter: brightness(1.1);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Make footer text less prominent */
+.footer-text {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
