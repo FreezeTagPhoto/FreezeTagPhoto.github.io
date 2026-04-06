@@ -1,0 +1,211 @@
+@import "reset.css";
+[data-theme-type="dark"] {
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --teal: #94e2d5;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: #89b4fa;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+
+  --dropshadow: drop-shadow(0.5px 0.5px 0.5px #000000);
+  --accent1: #579dd7;
+  --accent2: #aedbf0;
+  --accent3: #ffffff;
+  --backdrop: rgba(255, 255, 255, 0.15);
+  --border-color: rgba(150, 150, 150, 0.1);
+  --on-accent: var(--crust);
+}
+
+[data-theme-type="light"] {
+  --rosewater: #dc8a78;
+  --flamingo: #dd7878;
+  --pink: #ea76cb;
+  --mauve: #8839ef;
+  --red: #d20f39;
+  --maroon: #e64553;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --sky: #04a5e5;
+  --sapphire: #209fb5;
+  --blue: #1e66f5;
+  --lavender: #7287fd;
+  --text: #4c4f69;
+  --subtext1: #5c5f77;
+  --subtext0: #6c6f85;
+  --overlay2: #7c7f93;
+  --overlay1: #8c8fa1;
+  --overlay0: #9ca0b0;
+  --surface2: #acb0be;
+  --surface1: #bcc0cc;
+  --surface0: #ccd0da;
+  --base: #eff1f5;
+  --mantle: #e6e9ef;
+  --crust: #dce0e8;
+
+  --dropshadow: drop-shadow(0.5px 0.5px 0.5px #888888);
+  --accent1: #79c5d3;
+  --accent2: #579dd7;
+  --accent3: #ffffff;
+  --backdrop: rgba(0, 0, 0, 0.15);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --subtext0: var(--subtext1);
+  --on-accent: var(--text);
+}
+
+[data-theme-type="dark"] .icon {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(3%) saturate(5283%)
+    hue-rotate(186deg) brightness(100%) contrast(92%);
+}
+
+[data-theme-type="light"] .icon {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(16%) saturate(728%)
+    hue-rotate(196deg) brightness(94%) contrast(92%);
+}
+
+html {
+  --border-radius: 12px;
+  --border-info: 1px solid var(--border-color);
+  overflow-x: hidden;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: var(--crust);
+  color: var(--text);
+}
+
+body {
+  margin: 1rem;
+
+  background: var(--mantle);
+  border: var(--border-info);
+  border-radius: var(--border-radius);
+  filter: var(--dropshadow);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  min-height: 6rem;
+  padding: 1rem;
+}
+
+.header-logo {
+  height: 6rem;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.header-nav-list a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  height: 3rem;
+  width: 8rem;
+
+  text-decoration: none;
+  color: var(--text);
+
+  background-color: var(--base);
+  border-radius: var(--border-radius);
+  border: var(--border-info);
+  filter: var(--dropshadow);
+}
+
+.header-nav-list a:hover {
+  background-color: var(--surface0);
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+  .header-nav-list a {
+    width: 3rem;
+  }
+  .header-nav-list a p {
+    display: none;
+  }
+  .header-nav-list a .icon {
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-nav-list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 210px) {
+  .header-nav-list a {
+    width: 3rem;
+  }
+  .header-nav-list a p {
+    display: none;
+  }
+  .header-nav-list a .icon {
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.header-theme-button {
+  height: 3rem;
+  width: 3rem;
+
+  background-color: var(--base);
+  border-radius: var(--border-radius);
+  border: var(--border-info);
+  filter: var(--dropshadow);
+
+  cursor: pointer;
+}
+
+.header-theme-button:hover {
+  background-color: var(--surface0);
+}
+
+.header-theme-button-icon {
+  height: 75%;
+  align-self: center;
+  justify-self: center;
+}

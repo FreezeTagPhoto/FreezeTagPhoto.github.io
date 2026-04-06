@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>FreezeTag</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
-</head>
+<html>
+
 <body>
-  <div class="page-wrapper">
-    <main>
-      <a href="index.html">
-        <img src="freezetag+text.svg" alt="FreezeTag Logo" height="100" />
-      </a>
-
-      <p>FreezeTag is free, open source, and extensible image storage solution that is designed to give you the power to
-    choose your workflow. Whether you just need basic storage and tagging capabilities, or powerful machine-learning
-    features, or integration with external applications, FreezeTag can help you accomplish your goals.</p>
-
-      <p class="sub-text">
-        Developed as a Computer Science Capstone Project at the University of Utah (2025-2026).
-      </p>
-
-      <div class="cta-container">
-        <a href="documentation" class="btn-primary">View Documentation</a>
-      </div>
-    </main>
-  </div>
+    <header>
+        <link rel="icon" href="assets/favicon.svg">
+        <link rel="stylesheet" href="globals.css">
+        <script type="module" src="theme.js"></script>
+        <div class="header-container">
+            <picture>
+                <source media="(min-width: 900px)" srcset="assets/freezetag+text.svg">
+                <source media="(min-width: 650px)" srcset="assets/favicon.svg">
+                <source media="(min-width: 360px)" srcset="assets/freezetag+text.svg">
+                <img src="assets/favicon.svg" alt="FreezeTag Logo" class="header-logo">
+            </picture>
+            <nav>
+                <ul class="header-nav-list">
+                    <li>
+                        <a href="/">
+                            <img src="assets/home-icon.svg" class="icon">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/download.html">
+                            <img src="assets/download-icon.svg" class="icon">
+                            <p>Download</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/teammembers.html">
+                            <img src="assets/team-icon.svg" class="icon">
+                            <p>Team Info</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/documentation">
+                            <img src="assets/tutorial-icon.svg" class="icon">
+                            <p>Tutorials</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header-theme-button">
+                <img src="assets/theme-icon.svg" class="header-theme-button-icon icon">
+            </button>
+        </div>
+    </header>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
