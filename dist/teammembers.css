@@ -36,6 +36,10 @@
   filter: var(--dropshadow);
 }
 
+.team-member p {
+  text-align: justify;
+}
+
 @media (min-width: 650px) {
   .team-member:nth-child(even) {
     flex-direction: row-reverse;
@@ -62,4 +66,12 @@
     width: 128px;
     height: 128px;
   }
+}
+
+a.contact:link {
+  color: var(--lavender)
+}
+
+a.contact:visited {
+  color: var(--blue)
 }
