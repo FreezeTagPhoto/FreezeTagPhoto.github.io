@@ -1,0 +1,14 @@
+.download-area {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  background-color: var(--base);
+  border: var(--border-info);
+  border-radius: var(--border-radius);
+  filter: var(--dropshadow);
+}
