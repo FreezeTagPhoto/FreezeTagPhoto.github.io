@@ -1,37 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>FreezeTag</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
-</head>
+<html>
+
 <body>
-  <div class="page-wrapper">
-    <main>
-      <a href="index.html">
-        <img src="freezetag+text.svg" alt="FreezeTag Logo" height="100" />
-      </a>
-
-      <p>FreezeTag is free, open source, and extensible image storage solution that is designed to give you the power to
-    choose your workflow. Whether you just need basic storage and tagging capabilities, or powerful machine-learning
-    features, or integration with external applications, FreezeTag can help you accomplish your goals.</p>
-
-      <p class="sub-text">
-        Developed as a Computer Science Capstone Project at the University of Utah (2025-2026).
-      </p>
-
-      <div class="cta-container">
-        <a href="documentation" class="btn-primary">View Documentation</a>
-      </div>
-    </main>
-  </div>
+    <header>
+        <link rel="icon" href="assets/favicon.svg">
+        <link rel="stylesheet" href="globals.css">
+        <script type="module" src="theme.js"></script>
+        <div class="header-container">
+            <picture>
+                <source media="(min-width: 900px)" srcset="assets/freezetag+text.svg">
+                <source media="(min-width: 650px)" srcset="assets/favicon.svg">
+                <source media="(min-width: 360px)" srcset="assets/freezetag+text.svg">
+                <img src="assets/favicon.svg" alt="FreezeTag Logo" class="header-logo">
+            </picture>
+            <nav>
+                <ul class="header-nav-list">
+                    <li>
+                        <a href="/">
+                            <img src="assets/home-icon.svg" class="icon">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/download.html">
+                            <img src="assets/download-icon.svg" class="icon">
+                            <p>Download</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/teammembers.html">
+                            <img src="assets/team-icon.svg" class="icon">
+                            <p>Team Info</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/documentation">
+                            <img src="assets/tutorial-icon.svg" class="icon">
+                            <p>Tutorials</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header-theme-button">
+                <img src="assets/theme-icon.svg" class="header-theme-button-icon icon">
+            </button>
+        </div>
+    </header>
+    <link rel="stylesheet" href="index.css">
+    <ul>
+        <li class="about">
+            <div class="about-text">
+                <h1>FreezeTag</h1>
+                <p>
+                    FreezeTag is a (soon-to-be) open source self-hosted image storage solution. FreezeTag aims to allow
+                    users to leverage the primary features offered by Apple Photos or Google Photos, without requiring
+                    users to spend on expensive subscriptions or entrust their data with third-party software. FreezeTag
+                    supports a robust image tagging system, which allows images to be easily categorized based on the
+                    user's needs. In addition, FreezeTag is built with a plugin system that allows the app to be
+                    directly extended with programs written in Python. This allows the app to leverage local AI models
+                    through PyTorch, or to leverage third-party models through interacting with the respective API.
+                    These plugins are totally optional and extensible, giving maximum control to the user.
+                </p>
+            </div>
+            <img src="assets/gallery.png" class="about-image">
+        </li>
+        <li class="about">
+            <div class="about-text">
+                <h1>Image Tech Stack</h1>
+                <p>
+                    We use ImageMagick in our Go backend to parse and process images. ImageMagick allows us to extract
+                    metadata from most image formats, which we are able to use for searching or display. We also use
+                    ImageMagick to create WebP thumbnails, so that our app is responsive. Image information is stored
+                    using SQLite databases. Optionally, our frontend uses Leaflet to interface with OpenStreetMap to
+                    display location information. Everything else working with images, including the API endpoints,
+                    searching, tagging, file storage, and the gallery is all built in-house by us.
+                </p>
+            </div>
+            <img src="assets/metadata.png" class="about-image">
+        </li>
+        <li class="about">
+            <div class="about-text">
+                <h1>Plugin Tech Stack</h1>
+                <p>
+                    Our plugins are written in Python, and we rely on the uv package manager for constructing the
+                    environments for each plugin. In addition, the many AI-powered plugins rely on the use of PyTorch
+                    and related libraries to support running models. We also have a sample plugin that can use the
+                    Gemini API if you provide it with a key. The plugin protocol was entirely written in-house, which
+                    allows each plugin to interface with the app through a set of functions provided in the FreezeTag
+                    module that we wrote. These plugins run as part of a custom jobs system, which tracks the operation
+                    of each plugin or upload batch.
+                </p>
+            </div>
+            <img src="assets/plugins.png" class="about-image">
+        </li>
+        <li class="about">
+            <div class="about-text">
+                <h1>Users Tech Stack</h1>
+                <p>
+                    We store user information in our SQLite database, and hash user passwords using BCrypt. We built
+                    every other user component ourselves using standard industry practices. Each user can have
+                    permissions that limit their use of the app, to allow protecting data in case of accidents or
+                    breaches. In addition, our album systems allows some images to be restricted from certain users, to
+                    support mixed use cases on a shared instance. We automatically generate an admin user on
+                    initializing the app, so no complicated setup is required.
+                </p>
+            </div>
+            <img src="assets/settings.png" class="about-image">
+        </li>
+    </ul>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
