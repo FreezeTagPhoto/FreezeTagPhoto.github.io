@@ -2,13 +2,42 @@
   margin: 1rem;
   padding: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+}
 
+.download-area p {
   background-color: var(--base);
   border: var(--border-info);
   border-radius: var(--border-radius);
   filter: var(--dropshadow);
+  margin: 1rem;
+  padding: 2rem;
+
+  max-width: 75%;
+}
+
+a.docker-link:link {
+  color: var(--lavender);
+}
+
+a.docker-link:visited {
+  color: var(--blue);
+}
+
+a.freezetag-link {
+  background-color: var(--base);
+  border: var(--border-info);
+  border-radius: var(--border-radius);
+  filter: var(--dropshadow);
+
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  margin: 1rem;
+  padding: 1rem;
 }
