@@ -20,7 +20,11 @@ You can double-click the `start.sh` script to start the app, and the `stop.sh` s
 
 ### WARNING!
 
-By default, FreezeTag does not run through https, the secure protocol. On a secure home network, or for usage exclusively on a local machine, this is generally fine as attackers will not be able to reach the instance. If you want to make your FreezeTag instance accessible outside of your network, then you should set up https through a nginx proxy or similar software. If you do not know how to do that, then you should seek assistance from someone you trust. Failing to properly enable https when needed puts you at risk of malware.
+By default, FreezeTag does not run through https, the secure protocol. On a secure home network, or for usage exclusively on a local machine, this is generally fine, as attackers will not be able to reach the instance. If you want to make your FreezeTag instance accessible outside of your network, then you should set up https through a nginx proxy or similar software. If you do not know how to do that, then you should seek assistance from someone you trust. Failing to properly enable https when needed puts you at risk of malware.
+
+## Logging In
+
+On initial startup, the only user account present is a generated admin account with username `admin` and password `admin`. Once you sign in with this account, you will be able to change the password of this account on the Settings page, as well as create new accounts on the Accounts page. These steps are detailed in future pages of the documentation.
 
 ## Next Steps
 
