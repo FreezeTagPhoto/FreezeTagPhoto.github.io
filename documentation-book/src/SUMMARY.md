@@ -1,3 +1,4 @@
 # Summary
 
-- [Quickstart Guide for Users](quickstart_guide/quickstart_users.md)
+- [Quickstart Guide](quickstart_users.md)
+- [Use Cases](use_cases/use_cases.md)
