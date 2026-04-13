@@ -5,3 +5,8 @@ language = "en"
 
 [output.html]
 site-url = "/documentation/"
+no-section-label = false
+
+[output.html.fold]
+enable = false    # whether or not to enable section folding
+level = 0         # the depth to start folding
