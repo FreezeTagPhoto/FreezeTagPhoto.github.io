@@ -74,7 +74,7 @@ With this new gallery, you can select and deselect images using similar controls
 
 The tagging capabilities differ slightly from the controls in [Uploading Images](./use_cases.md#uploading-images). Primarily, because it is possible and assumed that the images on this page already have tags, the tag menu will indicate the status of the tags based on your selected images.
 
-![Indeterminate Tags](./indetermine_tag.png.png)
+![Indeterminate Tags](./indeterminate_tag.png)
 
 The checkboxes here mean that the tag "beverage" is present on all selected images, the tag "bench" is present on none of the selected images, and the tag "beer" is present on some, but not all of the selected images. To modify the tags, you can use the checkboxes and the search/add bar as in [Uploading Images](./use_cases.md#uploading-images), however the only changes that will apply will be when you click a checkbox and actively change its state to either "all" or "none". When you click "Add Selected Tags", it will apply your changes based on the checkboxes you changed, to all images you have selected.
 
