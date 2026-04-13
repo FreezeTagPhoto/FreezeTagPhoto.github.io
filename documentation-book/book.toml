@@ -2,3 +2,6 @@
 title = "FreezeTag Documentation"
 authors = ["Ethan Collier, Brayden Jonsson, Max Petersen, Sathya Tadinada"]
 language = "en"
+
+[output.html]
+site-url = "/documentation/"
