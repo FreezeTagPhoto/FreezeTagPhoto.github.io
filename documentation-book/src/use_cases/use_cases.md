@@ -1,6 +1,6 @@
 # Use Cases
 
-This section will cover several common tasks, and how to complete them using FreezeTag. 
+This section will cover several common tasks, and how to complete them using FreezeTag.
 
 You can use the section headings on the left (you can collapse/uncollapse this menu with the hamburger button) to navigate to specific tasks.
 
@@ -68,7 +68,7 @@ From the main gallery page, click the "Select" button in the top-right corner to
 
 ![Multi-Select Page](./multi-select.png)
 
-In this mode, the search bar and search options freeze to prevent inconsistencies. If you would like to operate on a smaller set of images, then enter your search query on the main gallery with the guide given in [Search Images](./use_cases.md#search-images), and then click "Select". 
+In this mode, the search bar and search options freeze to prevent inconsistencies. If you would like to operate on a smaller set of images, then enter your search query on the main gallery with the guide given in [Search Images](./use_cases.md#search-images), and then click "Select".
 
 With this new gallery, you can select and deselect images using similar controls as in [Uploading Images](./use_cases.md#uploading-images). In addition, there is a "Run Plugins" button that is explained in [Running Plugins](./use_cases.md#running-plugins), as well as a "Delete Images" button that allows you to delete your selected images.
 
@@ -118,7 +118,7 @@ This shows you the images currently available in the album. Assuming you are the
 
 The Public/Private button determines the default visibility of the album. Public albums are visible by-default to anyone marked "Blacklisted" on the [Accounts](./use_cases.md#adding-new-accounts) page. "Whitelisted" accounts cannot see any images, except for images that are in albums they are explicitly marked as "Viewer" on. Private albums are not visible to either Blacklisted or Whitelisted accounts by-default. Users marked as "All" can see all public and private albums always, this is meant to be an admin-level setting. The logic is that Blacklisted accounts must be blacklisted from albums they shouldn't see, while whitelisted accounts must be whitelisted into albums/images they should see.
 
-The Access button allows you to modify the permissions of an album beyond the Public/Private Whitelisted/Blacklisted defaults. 
+The Access button allows you to modify the permissions of an album beyond the Public/Private Whitelisted/Blacklisted defaults.
 
 ![Access Panel](./access_panel.png)
 
@@ -185,6 +185,12 @@ You can use the dropdown menu to select your preferred theme. We support the bas
 If you would like to customize the theme you use, you can select either Custom option and apply your theme changes as you would like. Variables are provided for every color we use in the app, so you can customize as you see fit.
 
 ![Custom Theme Example](./custom_theme.png)
+
+If you like a particular theme you wrote and want to share it, you can export your theme using these buttons next to the theme dropdown:
+
+![Custom Theme JSON](./custom_theme_json.png)
+
+You can also, of course, import themes that have been previously saved. For the developers out there, these themes are just stored as JSON and can easily be modified in text, if you prefer that.
 
 ## Next Steps
 
