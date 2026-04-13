@@ -1,6 +1,6 @@
 # Use Cases
 
-This section will cover several common tasks, and how to complete them using FreezeTag. This will be a less-detailed guide compared to the page-by-page guide in the next chapter, but should allow you to get up-and-running based on your use-case.
+This section will cover several common tasks, and how to complete them using FreezeTag. 
 
 You can use the section headings on the left (you can collapse/uncollapse this menu with the hamburger button) to navigate to specific tasks.
 
@@ -102,7 +102,7 @@ For general image tagging, we provide "RAM Tagger" and "Google Gemini Tagger", w
 
 ## Face Recognition
 
-When this plugin is enabled, it will search for seed images in the instance and use those to identify faces in newly uploaded images. To define a seed image, select an image that is a reasonably good headshot of the person you want to face recognize:
+When this plugin is enabled, it will search for seed images in the instance and use those to identify faces in newly uploaded images. To define a seed image, select an image that is a reasonably good headshot of the person you want the system to recognize:
 
 ![Example Seed Image](./seed_image.png)
 
@@ -149,6 +149,12 @@ There are many reasons to want to change your password, especially when a passwo
 ![Change Password Panel](./change_password.png)
 
 Here, you can enter your original password and the password you would like to switch to, and then click "Save new password". At this time, it is not possible for a password reset request to be completed outside of the relevant account. Admin users can remove and re-add accounts to effectively reset passwords.
+
+## Changing your Profile Picture
+
+By default, FreezeTag generates profile pictures by operating an algorithm on your username. This is similar to Github. Of course, your profile picture can be customized by navigating to the Settings page and using this panel at the top:
+
+![Change Profile Picture Panel](./change_pfp.png)
 
 ## Jobs Page
 
