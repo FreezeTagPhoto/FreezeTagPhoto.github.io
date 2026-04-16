@@ -84,6 +84,10 @@
     hue-rotate(196deg) brightness(94%) contrast(92%);
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 html {
   --border-radius: 12px;
   --border-info: 1px solid var(--border-color);
