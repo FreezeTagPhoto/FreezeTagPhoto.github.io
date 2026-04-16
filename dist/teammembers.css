@@ -40,7 +40,7 @@
   text-align: justify;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 800px) {
   .team-member:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -50,9 +50,18 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .team-member {
     flex-direction: column;
+  }
+
+  .team-member-bio {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .team-member-bio h1 {
+    font-size: 2rem;
   }
 
   .team-member-image {
@@ -69,9 +78,9 @@
 }
 
 a.contact:link {
-  color: var(--lavender)
+  color: var(--lavender);
 }
 
 a.contact:visited {
-  color: var(--blue)
+  color: var(--blue);
 }
