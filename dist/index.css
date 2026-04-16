@@ -27,8 +27,6 @@
 }
 
 .about-image {
-  height: 16rem;
-
   background-color: var(--base);
   border: var(--border-info);
   border-radius: var(--border-radius);
@@ -41,6 +39,9 @@
   }
   .about:nth-child(even) h1 {
     text-align: right;
+  }
+  .about-image {
+    height: 16rem;
   }
 }
 
