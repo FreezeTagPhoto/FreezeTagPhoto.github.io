@@ -28,4 +28,4 @@ On initial startup, the only user account present is a generated admin account w
 
 ## Next Steps
 
-Guides for the primary features of FreezeTag are provided in the [Use Cases](use_cases.md) chapter.
+Guides for the primary features of FreezeTag are provided in the [Use Cases](../use_cases/index.md) chapter.

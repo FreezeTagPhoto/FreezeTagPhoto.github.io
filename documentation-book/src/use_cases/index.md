@@ -24,7 +24,7 @@ And you can use "Select All" or "Deselect All" to speed up the process. Then, we
 
 The tag is added to the instance, but isn't yet applied to our selected images. To do so, click the checkbox next to the tag name in the list, and then click "Add Selected Tags". This will apply the tags to your selected images. You can repeat this process for as many tags as necessary, and as many unique images as needed to tag your images exactly the way you want. The bottom bar also acts as a search bar, if you have a lot of tags.
 
-You may notice that new tags appear alongside the tags you added by hand. This is because, by default, we have some automated image tagging plugins enabled. You can view the details about those in [Automated Image Tagging](./use_cases.md#automated-image-tagging).
+You may notice that new tags appear alongside the tags you added by hand. This is because, by default, we have some automated image tagging plugins enabled. You can view the details about those in [Automated Image Tagging](./index.md#automated-image-tagging).
 
 ## Search Images
 
@@ -42,7 +42,7 @@ The following query searches for images that are taken on a device with any kind
 model=iPhone; "graduation"; near=40.7,-111.5,4deg;
 ```
 
-The "Tags" button to the right opens up a panel showing all tags that are on at least one image with the current search query. The "Sort" button to the right of that button allows the images in the gallery to be sorted based on their dates uploaded or taken, in ascending or descending order. The "Select" button on the furthest right is used in [Modify Images in Batches](./use_cases.md#modify-images-in-batches).
+The "Tags" button to the right opens up a panel showing all tags that are on at least one image with the current search query. The "Sort" button to the right of that button allows the images in the gallery to be sorted based on their dates uploaded or taken, in ascending or descending order. The "Select" button on the furthest right is used in [Modify Images in Batches](./index.md#modify-images-in-batches).
 
 ## Modify Single Images
 
@@ -50,7 +50,7 @@ From the main gallery page, click on the image you would like to modify. It will
 
 ![Metadata Panel](./metadata_panel.png)
 
-Here, all of the available metadata for the image is displayed, including an OpenStreetMap widget if location data was detected. There are three buttons in the top right. The puzzle piece allows plugins to be ran, which is covered in [Running Plugins](./use_cases.md#running-plugins). The download button will download the original image, in its original format, to your machine. The trash button will delete the image, with a confirmation dialog before the change is finalized.
+Here, all of the available metadata for the image is displayed, including an OpenStreetMap widget if location data was detected. There are three buttons in the top right. The puzzle piece allows plugins to be ran, which is covered in [Running Plugins](./index.md#running-plugins). The download button will download the original image, in its original format, to your machine. The trash button will delete the image, with a confirmation dialog before the change is finalized.
 
 Near the bottom right, there is a small Tags panel, where tags can be removed or added. Clicking on any of the tag pills will create a search query based on that tag in the main gallery, hovering over a tag will show an X that can be used to remove the tag. To add a tag, click the + button to show a search bar. Search for the tag you would like to add, or type out the name of a brand-new tag, then click the + button here to add that tag to the image.
 
@@ -60,7 +60,7 @@ Below the tags panel, there is an Albums panel, where this image can be added to
 
 ![Making a new Album](./make_new_album.png)
 
-When creating a new album, it is by default public, but you can click the globe button to make it private. Modifying and using albums in more depth is covered in [Albums](./use_cases.md#albums).
+When creating a new album, it is by default public, but you can click the globe button to make it private. Modifying and using albums in more depth is covered in [Albums](./index.md#albums).
 
 ## Modify Images in Batches
 
@@ -68,27 +68,27 @@ From the main gallery page, click the "Select" button in the top-right corner to
 
 ![Multi-Select Page](./multi-select.png)
 
-In this mode, the search bar and search options freeze to prevent inconsistencies. If you would like to operate on a smaller set of images, then enter your search query on the main gallery with the guide given in [Search Images](./use_cases.md#search-images), and then click "Select".
+In this mode, the search bar and search options freeze to prevent inconsistencies. If you would like to operate on a smaller set of images, then enter your search query on the main gallery with the guide given in [Search Images](./index.md#search-images), and then click "Select".
 
-With this new gallery, you can select and deselect images using similar controls as in [Uploading Images](./use_cases.md#uploading-images). In addition, there is a "Run Plugins" button that is explained in [Running Plugins](./use_cases.md#running-plugins), as well as a "Delete Images" button that allows you to delete your selected images.
+With this new gallery, you can select and deselect images using similar controls as in [Uploading Images](./index.md#uploading-images). In addition, there is a "Run Plugins" button that is explained in [Running Plugins](./index.md#running-plugins), as well as a "Delete Images" button that allows you to delete your selected images.
 
-The tagging capabilities differ slightly from the controls in [Uploading Images](./use_cases.md#uploading-images). Primarily, because it is possible and assumed that the images on this page already have tags, the tag menu will indicate the status of the tags based on your selected images.
+The tagging capabilities differ slightly from the controls in [Uploading Images](./index.md#uploading-images). Primarily, because it is possible and assumed that the images on this page already have tags, the tag menu will indicate the status of the tags based on your selected images.
 
 ![Indeterminate Tags](./indeterminate_tag.png)
 
-The checkboxes here mean that the tag "beverage" is present on all selected images, the tag "bench" is present on none of the selected images, and the tag "beer" is present on some, but not all of the selected images. To modify the tags, you can use the checkboxes and the search/add bar as in [Uploading Images](./use_cases.md#uploading-images), however the only changes that will apply will be when you click a checkbox and actively change its state to either "all" or "none". When you click "Add Selected Tags", it will apply your changes based on the checkboxes you changed, to all images you have selected.
+The checkboxes here mean that the tag "beverage" is present on all selected images, the tag "bench" is present on none of the selected images, and the tag "beer" is present on some, but not all of the selected images. To modify the tags, you can use the checkboxes and the search/add bar as in [Uploading Images](./index.md#uploading-images), however the only changes that will apply will be when you click a checkbox and actively change its state to either "all" or "none". When you click "Add Selected Tags", it will apply your changes based on the checkboxes you changed, to all images you have selected.
 
 This page can be left by using the "Return" button, which is in the same place as the "Select" button previously was.
 
 ## Running Plugins
 
-When you use one of the "Run Plugins" buttons described in either [Modify Single Images](./use_cases.md#modify-single-images) or [Modify Images in Batches](./use_cases.md#modify-images-in-batches), you will be greeted with this panel:
+When you use one of the "Run Plugins" buttons described in either [Modify Single Images](./index.md#modify-single-images) or [Modify Images in Batches](./index.md#modify-images-in-batches), you will be greeted with this panel:
 
 ![Plugin Panel](./plugin_panel.png)
 
 The available plugins will differ, depending on whether you have one image or multiple images selected. If just one image is selected, then it will show all plugins that have a "single image" or "image batch" signature, with either a "manual trigger" or "generate form" hook. If multiple are selected, it does not show those plugins with a "single image" signature.
 
-Choose the plugin you would like to run with the play button next to the plugin name, and it will begin the process of running that plugin. If the plugin does not need any user input, it will show you the [jobs page](./use_cases.md#jobs-page) so you can track the progress of that plugin. If the plugin is designed to work with user input, then it will generate and show you a form to fill out with the input required. Once that input has been given, it will show you the same jobs page.
+Choose the plugin you would like to run with the play button next to the plugin name, and it will begin the process of running that plugin. If the plugin does not need any user input, it will show you the [jobs page](./index.md#jobs-page) so you can track the progress of that plugin. If the plugin is designed to work with user input, then it will generate and show you a form to fill out with the input required. Once that input has been given, it will show you the same jobs page.
 
 ## Automated Image Tagging
 
@@ -96,9 +96,9 @@ We provide some plugins that automatically tag images, and those can be configur
 
 ![The Plugins Page](./plugins.png)
 
-This page lists out all plugins that are installed by default, including the three plugins with "Post Upload" tagging capabilities. Enabled plugins are marked with a green power button, and disabled plugins are marked with a red power button. We provide accessible and custom themes to change these colors, if desired. Refer to [Color Themes](./use_cases.md#color-themes) for more details. Disabled plugins are unable to run automatically, so this allows you to determine which plugins run upon upload.
+This page lists out all plugins that are installed by default, including the three plugins with "Post Upload" tagging capabilities. Enabled plugins are marked with a green power button, and disabled plugins are marked with a red power button. We provide accessible and custom themes to change these colors, if desired. Refer to [Color Themes](./index.md#color-themes) for more details. Disabled plugins are unable to run automatically, so this allows you to determine which plugins run upon upload.
 
-For general image tagging, we provide "RAM Tagger" and "Google Gemini Tagger", with the former being enabled by default and the latter being disabled by default. RAM Tagger uses a local model that runs entirely on your machine to tag images, while Google Gemini Tagger must be configured with a Gemini API key to function. If you have an API key you would like to use, click "Configure" and provide your API key there. We recommend only having one of these plugins enabled, so if you choose to use Gemini then be sure to disable RAM Tagger. We also provide "Face Recognition", which uses another local model to recognize faces, based on seed images. That is explained in [Face Recognition](./use_cases.md#face-recognition) if you would like to use the functionality, but if you do not need the functionality, then you can simply disable it.
+For general image tagging, we provide "RAM Tagger" and "Google Gemini Tagger", with the former being enabled by default and the latter being disabled by default. RAM Tagger uses a local model that runs entirely on your machine to tag images, while Google Gemini Tagger must be configured with a Gemini API key to function. If you have an API key you would like to use, click "Configure" and provide your API key there. We recommend only having one of these plugins enabled, so if you choose to use Gemini then be sure to disable RAM Tagger. We also provide "Face Recognition", which uses another local model to recognize faces, based on seed images. That is explained in [Face Recognition](./index.md#face-recognition) if you would like to use the functionality, but if you do not need the functionality, then you can simply disable it.
 
 ## Face Recognition
 
@@ -106,17 +106,17 @@ When this plugin is enabled, it will search for seed images in the instance and 
 
 ![Example Seed Image](./seed_image.png)
 
-Then, upload this image to FreezeTag if you haven't already. Once it is uploaded, use one of the workflows discussed previously (either [Uploading Images](./use_cases.md#uploading-images) or [Modify Single Images](./use_cases.md#modify-single-images) as appropriate) to add a tag to this image. The tag should be called `person:<name>`, where `<name>` is replaced with the name of the person. For the given headshot, I would use `person:Brayden`. The Face Recognition plugin will then, on every future upload where it is enabled, search for all `person:` tags and use those to operate its local model, and tag new images with the name of the individual. So, any future image that is identified as being of Brayden will be tagged `Brayden`.
+Then, upload this image to FreezeTag if you haven't already. Once it is uploaded, use one of the workflows discussed previously (either [Uploading Images](./index.md#uploading-images) or [Modify Single Images](./index.md#modify-single-images) as appropriate) to add a tag to this image. The tag should be called `person:<name>`, where `<name>` is replaced with the name of the person. For the given headshot, I would use `person:Brayden`. The Face Recognition plugin will then, on every future upload where it is enabled, search for all `person:` tags and use those to operate its local model, and tag new images with the name of the individual. So, any future image that is identified as being of Brayden will be tagged `Brayden`.
 
 ## Albums
 
-The Albums page manages albums. If your instance doesn't have any albums, then create one using the workflow described in [Modify Single Images](./use_cases.md#modify-single-images). Once you have at least one album created, there will be a list of albums you can choose from. Select the album you would like to modify to see a screen like this:
+The Albums page manages albums. If your instance doesn't have any albums, then create one using the workflow described in [Modify Single Images](./index.md#modify-single-images). Once you have at least one album created, there will be a list of albums you can choose from. Select the album you would like to modify to see a screen like this:
 
 ![Album Page](./album_page.png)
 
 This shows you the images currently available in the album. Assuming you are the owner (creator) of the album, then you will have options to modify the album, if you are just a viewer then these options won't be visible to you.
 
-The Public/Private button determines the default visibility of the album. Public albums are visible by-default to anyone marked "Blacklisted" on the [Accounts](./use_cases.md#adding-new-accounts) page. "Whitelisted" accounts cannot see any images, except for images that are in albums they are explicitly marked as "Viewer" on. Private albums are not visible to either Blacklisted or Whitelisted accounts by-default. Users marked as "All" can see all public and private albums always, this is meant to be an admin-level setting. The logic is that Blacklisted accounts must be blacklisted from albums they shouldn't see, while whitelisted accounts must be whitelisted into albums/images they should see.
+The Public/Private button determines the default visibility of the album. Public albums are visible by-default to anyone marked "Blacklisted" on the [Accounts](./index.md#adding-new-accounts) page. "Whitelisted" accounts cannot see any images, except for images that are in albums they are explicitly marked as "Viewer" on. Private albums are not visible to either Blacklisted or Whitelisted accounts by-default. Users marked as "All" can see all public and private albums always, this is meant to be an admin-level setting. The logic is that Blacklisted accounts must be blacklisted from albums they shouldn't see, while whitelisted accounts must be whitelisted into albums/images they should see.
 
 The Access button allows you to modify the permissions of an album beyond the Public/Private Whitelisted/Blacklisted defaults.
 
@@ -124,7 +124,7 @@ The Access button allows you to modify the permissions of an album beyond the Pu
 
 Accounts marked as "Viewer" here can see the album, while accounts marked as "Blocked" cannot see the album. It is important to note that users who are Blacklisted can still see the images in an album they are blocked from, but they cannot see the existence of an album. Whitelisted users are the only users who cannot see images in albums they are blocked from. Users marked as All can always see all albums, even if an album marks them as blocked.
 
-On the album page, it is also possible to delete the album, and use "Manage Images" to add new images to the album in bulk, similar to the operation of [Modify Images in Batches](./use_cases.md#modify-images-in-batches).
+On the album page, it is also possible to delete the album, and use "Manage Images" to add new images to the album in bulk, similar to the operation of [Modify Images in Batches](./index.md#modify-images-in-batches).
 
 ## Adding New Accounts
 
@@ -140,7 +140,7 @@ Here, you can give the username for your new account, as well as provide a passw
 
 ![Perms](./perms.png)
 
-Each checkbox represents the state of the particular permission. Lacking or having a particular permission will modify what each user is able to do on the app, as well as will change their UI to hide certain features they lack access to. Once you have configured the permissions as you like them, scroll to the bottom of this panel and click the "Submit Changes" button to finalize their new permissions. You can change their default album status simply by clicking the "Blacklisted"/"Whitelisted"/"All" button until it reads what you would expect. There are more details about what album lists mean in [Albums](./use_cases.md#albums).
+Each checkbox represents the state of the particular permission. Lacking or having a particular permission will modify what each user is able to do on the app, as well as will change their UI to hide certain features they lack access to. Once you have configured the permissions as you like them, scroll to the bottom of this panel and click the "Submit Changes" button to finalize their new permissions. You can change their default album status simply by clicking the "Blacklisted"/"Whitelisted"/"All" button until it reads what you would expect. There are more details about what album lists mean in [Albums](./index.md#albums).
 
 ## Changing your Password
 
