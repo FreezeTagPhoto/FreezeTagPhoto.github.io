@@ -17,17 +17,26 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup mdBook
+      - name: Install mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: 'latest'
-      - name: Build mdBook
-        run: mdbook build documentation-book --dest-dir dist/documentation
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      
+      - name: Build static site
+        run: |
+          pnpm install
+          pnpm build
+          mdbook build documentation-book --dest-dir _site/documentation
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/
+          path: _site/
 
   deploy:
     environment:
