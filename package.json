@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "freezetag-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy && mdbook build documentation-book --dest-dir dist/documentation",
+    "dev": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.20.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-handlebars": "^1.0.0",
+    "@codestitchofficial/eleventy-plugin-minify": "^1.1.3"
+  }
+}

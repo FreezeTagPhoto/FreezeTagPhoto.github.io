@@ -1,0 +1,12 @@
+<nav>
+    <ul class="header-nav-list">
+        {{#each (lookup collections "navbar")}}
+            <li>
+                <a href="{{#if this.url}}{{this.url}}{{else}}{{this.data.url}}{{/if}}">
+                    <img src="/{{this.data.navIcon}}" class="icon">
+                    <p>{{this.data.title}}</p>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>
