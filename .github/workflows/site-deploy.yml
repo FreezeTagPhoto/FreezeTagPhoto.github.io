@@ -31,12 +31,11 @@ jobs:
         run: |
           pnpm install
           pnpm build
-          mdbook build documentation-book --dest-dir _site/documentation
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site/
+          path: dist/
 
   deploy:
     environment:

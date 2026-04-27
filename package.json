@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && mdbook build documentation-book --dest-dir dist/documentation",
     "dev": "eleventy --serve"
   },
   "keywords": [],
