@@ -155,12 +155,15 @@ body {
   background-color: var(--surface0);
 }
 
-@media (min-width: 650px) and (max-width: 1200px) {
+@media (min-width: 730px) and (max-width: 1380px) {
   .header-nav-list a {
     width: 3rem;
   }
   .header-nav-list a p {
     display: none;
+  }
+  .github-icon {
+    height: 2.5rem !important;
   }
   .header-nav-list a .icon {
     height: 75%;
@@ -169,7 +172,7 @@ body {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 730px) {
   .header-container {
     flex-direction: column;
   }
@@ -184,6 +187,9 @@ body {
   }
   .header-nav-list a p {
     display: none;
+  }
+  .github-icon {
+    height: 2.5rem !important;
   }
   .header-nav-list a .icon {
     height: 75%;
@@ -212,4 +218,8 @@ body {
   height: 75%;
   align-self: center;
   justify-self: center;
+}
+
+.github-icon {
+  height: 2.5rem !important;
 }
